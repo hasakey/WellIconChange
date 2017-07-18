@@ -16,14 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (IBAction)defaultIcon:(UIButton *)sender {
+    [self iconChangeWithIcon:nil];
+}
+
+- (IBAction)asheIcon:(UIButton *)sender {
+    [self iconChangeWithIcon:@"Ashe"];
+}
+
+- (IBAction)ekkoIcon:(UIButton *)sender {
+    [self iconChangeWithIcon:@"Ekko"];
+}
+
+- (IBAction)yasuoIcon:(UIButton *)sender {
+    [self iconChangeWithIcon:@"Yasuo"];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)iconChangeWithIcon:(NSString *)iconName
+{
+    [[UIApplication sharedApplication]setAlternateIconName:iconName completionHandler:^(NSError * error){
+        NSLog(@"error %@",error);
+    }];
 }
-
 
 @end

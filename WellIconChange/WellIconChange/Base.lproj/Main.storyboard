@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-dN-ETr">
+                                <rect key="frame" x="116" y="120" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2zq-Lz-7bR"/>
+                                    <constraint firstAttribute="height" constant="60" id="XPs-L6-QV2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Default"/>
+                                <connections>
+                                    <action selector="defaultIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkl-r6-MmX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR7-YS-3cv">
+                                <rect key="frame" x="199" y="120" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JRA-6I-zBG"/>
+                                    <constraint firstAttribute="width" constant="60" id="awg-AY-3BX"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Ashe"/>
+                                <connections>
+                                    <action selector="asheIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAj-td-9cG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-SR-5JH">
+                                <rect key="frame" x="116" y="230" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="V8z-T2-170"/>
+                                    <constraint firstAttribute="width" constant="60" id="pyk-5s-mKx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Ekko"/>
+                                <connections>
+                                    <action selector="ekkoIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkM-GW-62T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02X-pT-FBT">
+                                <rect key="frame" x="199" y="230" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F1h-bw-95a"/>
+                                    <constraint firstAttribute="width" constant="60" id="O7g-Vw-ynh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Yasuo"/>
+                                <connections>
+                                    <action selector="yasuoIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCV-IH-qaI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zwm-SR-5JH" firstAttribute="top" secondItem="U0G-dN-ETr" secondAttribute="bottom" constant="50" id="0gK-F2-9Gl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pR7-YS-3cv" secondAttribute="trailing" constant="100" id="2YI-4h-Xuo"/>
+                            <constraint firstItem="zwm-SR-5JH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="6o9-5B-5l9"/>
+                            <constraint firstItem="02X-pT-FBT" firstAttribute="top" secondItem="pR7-YS-3cv" secondAttribute="bottom" constant="50" id="AaA-ph-APr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="02X-pT-FBT" secondAttribute="trailing" constant="100" id="D0s-6S-sVt"/>
+                            <constraint firstItem="U0G-dN-ETr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="IlD-3B-FKZ"/>
+                            <constraint firstItem="pR7-YS-3cv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="XKf-2G-kZT"/>
+                            <constraint firstItem="U0G-dN-ETr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="mLx-hx-b2u"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ashe" width="60" height="60"/>
+        <image name="Default" width="60" height="60"/>
+        <image name="Ekko" width="60" height="60"/>
+        <image name="Yasuo" width="60" height="60"/>
+    </resources>
 </document>

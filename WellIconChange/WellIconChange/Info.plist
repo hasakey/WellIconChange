@@ -2,6 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundleAlternateIcons</key>
+        <dict>
+            <key>Ekko</key>
+            <dict>
+                <key>UIPrerenderedIcon</key>
+                <true/>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Ekko</string>
+                </array>
+            </dict>
+            <key>Ashe</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Ashe-29</string>
+                    <string>Ashe-40</string>
+                    <string>Ashe-57</string>
+                    <string>Ashe-60</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <true/>
+            </dict>
+            <key>Yasuo</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Yasuo-29</string>
+                    <string>Yasuo-40</string>
+                    <string>Yasuo-57</string>
+                    <string>Yasuo-60</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
